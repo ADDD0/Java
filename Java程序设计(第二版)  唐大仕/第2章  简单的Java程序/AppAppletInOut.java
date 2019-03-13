@@ -15,8 +15,8 @@ public class AppAppletInOut extends Applet {
 	}
 
 	TextField in = new TextField(10);
-	Button btn = new Button("ÇóÆ½·½");
-	Label out = new Label("ÓÃÓÚÏÔÊ¾½á¹ûµÄ±êÇ©");
+	Button btn = new Button("æ±‚å¹³æ–¹");
+	Label out = new Label("ç”¨äºŽæ˜¾ç¤ºç»“æžœçš„æ ‡ç­¾");
 
 	public void Init() {
 		setLayout(new FlowLayout());
@@ -32,7 +32,7 @@ public class AppAppletInOut extends Applet {
 			double d = Double.parseDouble(s);
 			double sq = d * d;
 
-			out.setText(d + "µÄÆ½·½ÊÇ: " + sq);
+			out.setText(d + "çš„å¹³æ–¹æ˜¯: " + sq);
 		}
 	}
 }

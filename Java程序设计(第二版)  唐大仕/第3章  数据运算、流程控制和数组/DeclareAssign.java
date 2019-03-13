@@ -1,13 +1,13 @@
 public class DeclareAssign {
 	public static void main(String[] args) {
-		boolean b=true;   //ÉùÃ÷booleanĞÍ±äÁ¿²¢¸³Öµ
-		int x, y=8;       //ÉùÃ÷intĞÍ±äÁ¿
-		float f=4.5f;     //ÉùÃ÷floatĞÍ±äÁ¿²¢¸³Öµ
-		double d=3.1415;  //ÉùÃ÷doubleĞÍ±äÁ¿²¢¸³Öµ
-		char c;           //ÉùÃ÷charĞÍ±äÁ¿
+		boolean b=true;   //å£°æ˜booleanå‹å˜é‡å¹¶èµ‹å€¼
+		int x, y=8;       //å£°æ˜intå‹å˜é‡
+		float f=4.5f;     //å£°æ˜floatå‹å˜é‡å¹¶èµ‹å€¼
+		double d=3.1415;  //å£°æ˜doubleå‹å˜é‡å¹¶èµ‹å€¼
+		char c;           //å£°æ˜charå‹å˜é‡
 
-		c = '\u0031';     //ÎªcharĞÍ±äÁ¿¸³Öµ
-		x = 12;           //ÎªintĞÍ±äÁ¿¸³Öµ
+		c = '\u0031';     //ä¸ºcharå‹å˜é‡èµ‹å€¼
+		x = 12;           //ä¸ºintå‹å˜é‡èµ‹å€¼
 
 		System.out.println("b=" + b);
 		System.out.println("x=" + x);

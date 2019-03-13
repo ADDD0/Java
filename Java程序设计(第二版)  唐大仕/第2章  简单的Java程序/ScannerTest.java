@@ -4,8 +4,8 @@ class ScannerTest {
 	public static void main(String[] args) {
 		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("请输入一个数");
+		System.out.print("璇疯緭鍏ヤ竴涓暟");
 		int a = scanner.nextInt();
-		System.out.printf("%d的平方是%d\n", a, a * a);
+		System.out.printf("%d鐨勫钩鏂规槸%d\n", a, a * a);
 	}
 }
