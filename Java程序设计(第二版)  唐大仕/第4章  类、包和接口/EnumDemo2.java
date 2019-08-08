@@ -19,6 +19,6 @@ public class EnumDemo2 {
 		Direction2 dir = Direction2.NORTH;
 		for (Direction2 d : Direction2.values())
 			System.out.println(
-					d.getDesc() + "," + d.getNum() + "," + d.ordinal());
+				d.getDesc() + "," + d.getNum() + "," + d.ordinal());
 	}
 }

@@ -26,7 +26,7 @@ class Student extends Person {
 		this.school = school;
 	}
 	void sayHello() {
-		System.out.println("我是学生, 我名叫:" + name + ",年龄为:" + age
-				+ "学校在:" + school);
+		System.out.println("我是学生, 我名叫:" + name + ",年龄为:" + age + 
+			"学校在:" + school);
 	}
 }

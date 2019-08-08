@@ -12,9 +12,7 @@ class Outer {
 		final int finalLocalVar=99;
 		return new Object() {
 			public String toString() {
-				return ("InnerSize:" + size +
-						"finalLocalVar:" + finalLocalVar
-						);
+				return ("InnerSize:" + size + "finalLocalVar:" + finalLocalVar);
 			}
 		};
 	}

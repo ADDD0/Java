@@ -1,8 +1,10 @@
 public class BitwiseOp {
-	static String binary[]= {"0000", "0001", "0010", "0011",
-			"0100", "0101", "0110", "0111",
-			"1000", "1001", "1010", "1011",
-			"1100", "1101", "1110", "1111"};
+	static String binary[] = {
+		"0000", "0001", "0010", "0011",
+		"0100", "0101", "0110", "0111",
+		"1000", "1001", "1010", "1011",
+		"1100", "1101", "1110", "1111"	
+	};
 
 	static final int FLAG1=1;    //make FLAG1 a constant(0x0001)
 	static final int FLAG2=2;    //make FLAG2 a constant(0x0010)

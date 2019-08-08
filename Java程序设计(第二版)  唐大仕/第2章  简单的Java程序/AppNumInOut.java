@@ -8,7 +8,7 @@ public class AppNumInOut {
 
 		try {
 			BufferedReader in = new BufferedReader(
-					new InputStreamReader(System.in));
+				new InputStreamReader(System.in));
 			System.out.print("Please input an int: ");
 			s = in.readLine();
 			n = Integer.parseInt(s);

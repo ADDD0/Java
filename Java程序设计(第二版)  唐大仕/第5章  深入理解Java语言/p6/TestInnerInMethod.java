@@ -13,9 +13,9 @@ class Outer {
 		class Inner {
 			public String toString() {
 				return ("InnerSize:" + size +
-						//"localVar:" + localVar +  //Error!
-						"finalLocalVar:" + finalLocalVar
-						);
+					//"localVar:" + localVar +  //Error!
+					"finalLocalVar:" + finalLocalVar
+				);
 			}
 		}
 		return new Inner();

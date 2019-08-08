@@ -4,7 +4,7 @@ public class Student extends Person{
 
 	// void sayHello() {
 	//     System.out.println("Hello! My name is " + name + 
-	//             ".My school is " + school);
+	//         ".My school is " + school);
 	// }
 
 	void sayHello(Student another) {
