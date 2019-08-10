@@ -1,5 +1,6 @@
 abstract class C {
 	abstract void callme();
+
 	void metoo() {
 		System.out.println("Inside C's metoo() method");
 	}

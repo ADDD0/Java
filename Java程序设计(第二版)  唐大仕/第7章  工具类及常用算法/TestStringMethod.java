@@ -18,6 +18,6 @@ public class TestStringMethod {
 		System.out.println(s.toLowerCase());
 		System.out.println(s.replace('o', 'x'));
 
-		System.out.println(s);  //注意,s本身没有改变
+		System.out.println(s); // 注意,s本身没有改变
 	}
 }

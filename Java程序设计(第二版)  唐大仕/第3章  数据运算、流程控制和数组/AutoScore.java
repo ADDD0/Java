@@ -1,9 +1,9 @@
 import java.awt.*;
 import java.applet.*;
 
-public class AutoScore extends Applet{
+public class AutoScore extends Applet {
 	public void init() {
-		//{{INIT_CONTROLS
+		// {{INIT_CONTROLS
 		setLayout(null);
 		setSize(380, 266);
 		btnNew.setLabel("出题");
@@ -36,16 +36,16 @@ public class AutoScore extends Applet{
 		listDisp.setFont(new Font("Dialog", Font.PLAIN, 16));
 		add(listDisp);
 		listDisp.setBounds(36, 144, 272, 106);
-		//}}
+		// }}
 
-		//{{
+		// {{
 		SymAction lSymAction = new SymAction();
 		btnNew.addActionListener(lSymAction);
 		button2.addActionListener(lSymAction);
-		//}}
+		// }}
 	}
 
-	//{{DECLARE_CONTROLS
+	// {{DECLARE_CONTROLS
 	java.awt.Button btnNew = new java.awt.Button();
 	java.awt.Button button2 = new java.awt.Button();
 	java.awt.Label lblA = new java.awt.Label();
@@ -54,7 +54,7 @@ public class AutoScore extends Applet{
 	java.awt.Label label5 = new java.awt.Label();
 	java.awt.TextField txtAnswer = new java.awt.TextField();
 	java.awt.List listDisp = new java.awt.List(0);
-	//}}
+	// }}
 
 	class SymAction implements java.awt.event.ActionListener {
 		public void actionPerformed(java.awt.event.ActionEvent event) {
@@ -67,27 +67,27 @@ public class AutoScore extends Applet{
 	}
 
 	void btnNew_ActionPerformed(java.awt.event.ActionEvent event) {
-		//to do: code goes here.
-		a = (int)(Math.random() * 9 + 1);
-		b = (int)(Math.random() * 9 + 1);
-		int c = (int)(Math.random() * 4);
+		// to do: code goes here.
+		a = (int) (Math.random() * 9 + 1);
+		b = (int) (Math.random() * 9 + 1);
+		int c = (int) (Math.random() * 4);
 		switch (c) {
-			case 0:
-				op = "+";
-				result = a + b;
-				break;
-			case 1:
-				op = "-";
-				result = a - b;
-				break;
-			case 2:
-				op = "*";
-				result = a * b;
-				break;
-			case 3:
-				op = "/";
-				result = a / b;
-				break;
+		case 0:
+			op = "+";
+			result = a + b;
+			break;
+		case 1:
+			op = "-";
+			result = a - b;
+			break;
+		case 2:
+			op = "*";
+			result = a * b;
+			break;
+		case 3:
+			op = "/";
+			result = a / b;
+			break;
 		}
 		lblA.setText("" + a);
 		lblB.setText("" + b);
@@ -95,12 +95,12 @@ public class AutoScore extends Applet{
 		txtAnswer.setText("");
 	}
 
-	int a=0, b=0;
-	String op="";
-	double result=0;
+	int a = 0, b = 0;
+	String op = "";
+	double result = 0;
 
 	void button2_ActionPerformed(java.awt.event.ActionEvent event) {
-		//to do: code goes here.
+		// to do: code goes here.
 		String str = txtAnswer.getText();
 		double d = Double.valueOf(str).doubleValue();
 		String disp = "" + a + op + b + "=" + str + " ";

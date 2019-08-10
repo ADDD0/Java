@@ -14,9 +14,11 @@ class Human extends Animal implements Runner, Swimmer {
 	public void run() {
 		System.out.println("run");
 	}
+
 	public void swim() {
 		System.out.println("swim");
 	}
+
 	public void eat() {
 		System.out.println("eat");
 	}
@@ -30,12 +32,15 @@ public class TestInterface {
 		t.m2(h);
 		t.m3(h);
 	}
+
 	public void m1(Runner f) {
 		f.run();
 	}
+
 	public void m2(Swimmer s) {
 		s.swim();
 	}
+
 	public void m3(Animal a) {
 		a.eat();
 	}

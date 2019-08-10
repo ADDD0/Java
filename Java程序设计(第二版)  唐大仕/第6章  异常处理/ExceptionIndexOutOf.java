@@ -1,8 +1,8 @@
 public class ExceptionIndexOutOf {
 	public static void main(String[] args) {
-		String friends[] = {"lisa", "bily", "kessy"};
+		String friends[] = { "lisa", "bily", "kessy" };
 		try {
-			for (int i=0; i < 5; ++i) {
+			for (int i = 0; i < 5; ++i) {
 				System.out.println(friends[i]);
 			}
 		} catch (java.lang.ArrayIndexOutOfBoundsException e) {

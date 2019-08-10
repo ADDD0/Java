@@ -5,9 +5,9 @@ public class Jiaogu {
 		System.out.print("\n 请输入一个数:");
 		Scanner scanner = new Scanner(System.in);
 		int a = scanner.nextInt();
-		int cnt=0;
+		int cnt = 0;
 		while (a != 1) {
-			System.out.print(" " + a);;
+			System.out.print(" " + a);
 			cnt++;
 			if (a % 2 == 1)
 				a = a * 3 + 1;

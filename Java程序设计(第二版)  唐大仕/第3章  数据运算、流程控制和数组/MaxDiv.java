@@ -1,6 +1,6 @@
 public class MaxDiv {
 	public static void main(String[] args) {
-		int a=99;
+		int a = 99;
 		int i = a - 1;
 
 		while (i > 0) {

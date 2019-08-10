@@ -1,9 +1,9 @@
 public final class TestFinal {
-	public static int totalNumber=5;
+	public static int totalNumber = 5;
 	public final int id;
 
 	public TestFinal() {
-		//在构造方法中对声明为final的变量id赋值
+		// 在构造方法中对声明为final的变量id赋值
 		id = ++totalNumber;
 	}
 
@@ -13,6 +13,6 @@ public final class TestFinal {
 		final int i = 10;
 		final int j;
 		j = 20;
-		//j = 30;  //非法
+		// j = 30; //非法
 	}
 }

@@ -11,31 +11,40 @@ public class TestInnerUse {
 class Parcel {
 	private Contents c;
 	private Destination d;
+
 	class Contents {
 		private int i;
+
 		Contents(int i) {
 			this.i = i;
 		}
+
 		int value() {
 			return i;
 		}
 	}
+
 	class Destination {
 		private String label;
+
 		Destination(String whereTo) {
 			label = whereTo;
 		}
+
 		String readLabel() {
 			return label;
 		}
 	}
+
 	void setValue(Contents c, Destination d) {
 		this.c = c;
 		this.d = d;
 	}
+
 	void ship() {
 		System.out.println("运输" + c.value() + "到" + d.readLabel());
 	}
+
 	public void testShip() {
 		c = new Contents(22);
 		d = new Destination("Tanzania");

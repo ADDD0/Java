@@ -9,7 +9,10 @@ public class ConstructCallThisAndSuper {
 class Person {
 	String name;
 	int age;
-	Person() {}
+
+	Person() {
+	}
+
 	Person(String name, int age) {
 		this.name = name;
 		this.age = age;
@@ -19,10 +22,12 @@ class Person {
 
 class Student extends Person {
 	String school;
+
 	Student() {
 		this(null, 0, null);
 		System.out.println("In Student()");
 	}
+
 	Student(String name, int age, String school) {
 		super(name, age);
 		this.school = school;

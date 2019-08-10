@@ -2,14 +2,14 @@ public class DoubleAndString {
 	public static void main(String[] args) {
 		double d;
 		String s;
-		//double转成String的几种方法
+		// double转成String的几种方法
 		d = 3.14159;
 		s = "" + d;
 		s = Double.toString(d);
 		s = new Double(d).toString();
 		s = String.valueOf(d);
 
-		//String转成double的几种方法
+		// String转成double的几种方法
 		s = "3.14159";
 		try {
 			d = Double.parseDouble(s);

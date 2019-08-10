@@ -1,4 +1,4 @@
-public class Student extends Person{
+public class Student extends Person {
 	String school;
 	int score;
 
@@ -19,7 +19,7 @@ public class Student extends Person{
 
 	void testThisSuper() {
 		int a;
-		a= age;
+		a = age;
 		a = this.age;
 		a = super.age;
 	}
@@ -34,7 +34,8 @@ public class Student extends Person{
 		this.school = school;
 	}
 
-	Student() {}
+	Student() {
+	}
 
 	public static void main(String[] args) {
 		Person p = new Person("Liming", 50);

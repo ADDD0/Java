@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 @SuppressWarnings("deprecation")
-public class AppletInOut extends Applet{
+public class AppletInOut extends Applet {
 	TextField in = new TextField(10);
 	Button btn = new Button("求平方");
 	Label out = new Label("用于显示结果的标签");

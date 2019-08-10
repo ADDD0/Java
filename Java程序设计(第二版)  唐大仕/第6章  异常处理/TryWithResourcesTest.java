@@ -2,12 +2,13 @@ import java.io.*;
 
 public class TryWithResourcesTest {
 	public static void main(String[] args) throws IOException {
-		String path="c:\\aaa.txt";
+		String path = "c:\\aaa.txt";
 		System.out.println(ReadOneLine1(path));
 		System.out.println(ReadOneLine2(path));
 	}
+
 	static String ReadOneLine1(String path) {
-		BufferedReader br=null;
+		BufferedReader br = null;
 		try {
 			br = new BufferedReader(new FileReader(path));
 			return br.readLine();
@@ -17,11 +18,13 @@ public class TryWithResourcesTest {
 			if (br != null) {
 				try {
 					br.close();
-				} catch (IOException ex) {}
+				} catch (IOException ex) {
+				}
 			}
 		}
 		return null;
 	}
+
 	static String ReadOneLine2(String path) throws IOException {
 		try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 			return br.readLine();

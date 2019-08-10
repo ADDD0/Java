@@ -7,26 +7,29 @@ public class ConstructInvokeMetamorph {
 }
 
 class Person {
-	String name="未命名";
-	int age=-1;
+	String name = "未命名";
+	int age = -1;
+
 	Person(String name, int age) {
 		this.name = name;
 		this.age = age;
 		sayHello();
 	}
+
 	void sayHello() {
 		System.out.println("我是一个人, 我名叫:" + name + ",年龄为:" + age);
 	}
 }
 
 class Student extends Person {
-	String school="未定学校";
+	String school = "未定学校";
+
 	Student(String name, int age, String school) {
 		super(name, age);
 		this.school = school;
 	}
+
 	void sayHello() {
-		System.out.println("我是学生, 我名叫:" + name + ",年龄为:" + age + 
-			"学校在:" + school);
+		System.out.println("我是学生, 我名叫:" + name + ",年龄为:" + age + "学校在:" + school);
 	}
 }

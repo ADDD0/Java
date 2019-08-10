@@ -22,45 +22,37 @@ class Person {
 	}
 
 	public static int better(Person p1, Person p2) {
-		return (int)(p2.score - p1.score);
+		return (int) (p2.score - p1.score);
 	}
 }
 
 public class LambdaArraySort {
 	public static void main(String... args) {
-		Person[] people = new Person[] {
-				new Person("Ted", 18, 91),
-				new Person("Charlotte", 20, 99),
-				new Person("Michael", 20, 99),
-				new Person("Matthew", 21, 84)
-		};
+		Person[] people = new Person[] { new Person("Ted", 18, 91), new Person("Charlotte", 20, 99),
+				new Person("Michael", 20, 99), new Person("Matthew", 21, 84) };
 
-		//使用匿名类来实现接口Comparator
+		// 使用匿名类来实现接口Comparator
 		Arrays.sort(people, new Comparator() {
 			public int compare(Object p1, Object p2) {
-				return ((Person)p1).age - ((Person)p2).age;
+				return ((Person) p1).age - ((Person) p2).age;
 			}
 		});
 
-		//直接使用Lambda表达式做函数的参数
-		Arrays.sort(people, 
-				(p1, p2)->p1.age - p2.age);
-		Arrays.sort(people,
-				(p1, p2)->(int)(p1.score - p2.score));
-		Arrays.sort(people,
-				(p1, p2)->p1.name.compareTo(p2.name));
-		Arrays.sort(people,
-				(p1, p2)->-p1.name.compareToIgnoreCase(p2.name));
+		// 直接使用Lambda表达式做函数的参数
+		Arrays.sort(people, (p1, p2) -> p1.age - p2.age);
+		Arrays.sort(people, (p1, p2) -> (int) (p1.score - p2.score));
+		Arrays.sort(people, (p1, p2) -> p1.name.compareTo(p2.name));
+		Arrays.sort(people, (p1, p2) -> -p1.name.compareToIgnoreCase(p2.name));
 
-		//使用函数表达式
+		// 使用函数表达式
 		Comparator<Person> cf = Person::better;
 		Arrays.sort(people, cf);
 		Arrays.sort(people, Person::better);
 
-		//使用系统更高阶的函数comparing
+		// 使用系统更高阶的函数comparing
 		Arrays.sort(people, Comparator.comparing(Person::getName));
 
-		for (Person p:people)
+		for (Person p : people)
 			System.out.println(p);
 	}
 }

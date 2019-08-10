@@ -4,11 +4,14 @@ enum Direction2 {
 		this.desc = desc;
 		this.num = num;
 	}
+
 	private String desc;
 	private int num;
+
 	public String getDesc() {
 		return desc;
 	}
+
 	public int getNum() {
 		return num;
 	}
@@ -18,7 +21,6 @@ public class EnumDemo2 {
 	public static void main(String[] args) {
 		Direction2 dir = Direction2.NORTH;
 		for (Direction2 d : Direction2.values())
-			System.out.println(
-				d.getDesc() + "," + d.getNum() + "," + d.ordinal());
+			System.out.println(d.getDesc() + "," + d.getNum() + "," + d.ordinal());
 	}
 }

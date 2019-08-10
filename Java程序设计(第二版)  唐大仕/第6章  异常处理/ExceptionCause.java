@@ -38,6 +38,7 @@ class MyAppException extends Exception {
 	public MyAppException(String message) {
 		super(message);
 	}
+
 	public MyAppException(String message, Exception cause) {
 		super(message, cause);
 	}

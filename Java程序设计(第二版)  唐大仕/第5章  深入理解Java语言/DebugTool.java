@@ -5,24 +5,27 @@ import java.lang.reflect.Method;
 import java.util.Date;
 
 //定义一个注记
-@Target(ElementType.METHOD)          //这个表明可以用于方法上
-@Retention(RetentionPolicy.RUNTIME)  //这个表明可以用反射来读取
-@Documented                          //这个表明它会生成到javadoc中
+@Target(ElementType.METHOD) // 这个表明可以用于方法上
+@Retention(RetentionPolicy.RUNTIME) // 这个表明可以用反射来读取
+@Documented // 这个表明它会生成到javadoc中
 @interface DebugTime {
 	boolean value() default true;
+
 	long timeout() default 100;
+
 	String msg();
-	int [] other() default {};
+
+	int[] other() default {};
 }
 
 //使用注解
 class MyClass {
-	@DebugTime(value=true, timeout=10, msg="时间太长", other={1,2,3})
+	@DebugTime(value = true, timeout = 10, msg = "时间太长", other = { 1, 2, 3 })
 	public double fib(int n) {
-		if(n == 0 || n == 1)
+		if (n == 0 || n == 1)
 			return 1;
 		else
-			return fib(n-1) + fib(n-2);
+			return fib(n - 1) + fib(n - 2);
 	}
 }
 
