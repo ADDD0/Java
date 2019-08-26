@@ -1,10 +1,8 @@
 import java.io.*;
 import java.util.*;
-
-import javax.imageio.ImageIO;
-
-import java.awt.image.*;
 import java.awt.*;
+import java.awt.image.*;
+import javax.imageio.ImageIO;
 
 public class JpegCreate {
 	public static void main(String[] args) {
