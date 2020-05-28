@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>web</display-name>
+	<!-- Hello 组件 -->
+	<servlet>
+		<servlet-name>HelloServlet</servlet-name>
+		<servlet-class>HelloServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HelloServlet</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+	<!-- BMI 组件 -->
+	<servlet>
+		<servlet-name>BMIServlet</servlet-name>
+		<servlet-class>BMIServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BMIServlet</servlet-name>
+		<url-pattern>/bmi</url-pattern>
+	</servlet-mapping>
+	<!-- User 组件 -->
+	<servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>UserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/addUser</url-pattern>
+	</servlet-mapping>
+	<!-- ListEmp 组件 -->
+	<servlet>
+		<servlet-name>ListEmpServlet</servlet-name>
+		<servlet-class>servlet.ListEmpServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListEmpServlet</servlet-name>
+		<url-pattern>/list</url-pattern>
+	</servlet-mapping>
+	<!-- AddEmp 组件 -->
+	<servlet>
+		<servlet-name>AddEmpServlet</servlet-name>
+		<servlet-class>servlet.AddEmpServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddEmpServlet</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+	<!-- DelEmp 组件 -->
+	<servlet>
+		<servlet-name>DelEmpServlet</servlet-name>
+		<servlet-class>servlet.DelEmpServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelEmpServlet</servlet-name>
+		<url-pattern>/del</url-pattern>
+	</servlet-mapping>
+	<!-- ModifyEmp 组件 -->
+	<servlet>
+		<servlet-name>ModifyEmpServlet</servlet-name>
+		<servlet-class>servlet.ModifyEmpServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModifyEmpServlet</servlet-name>
+		<url-pattern>/modify</url-pattern>
+	</servlet-mapping>
+	<!-- Action 组件 -->
+	<servlet>
+		<servlet-name>ActionServlet</servlet-name>
+		<servlet-class>servlet.ActionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ActionServlet</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+</web-app>
