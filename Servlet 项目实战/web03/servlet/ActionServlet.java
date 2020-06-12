@@ -47,7 +47,6 @@ public class ActionServlet extends HttpServlet {
 				e.printStackTrace();
 				out.println("稍后再试");
 			}
-
 		} else if (action.equals("/list")) {
 			try {
 				UserDAO dao = new UserDAOImpl();
@@ -112,7 +111,6 @@ public class ActionServlet extends HttpServlet {
 				e.printStackTrace();
 				out.println("系统繁忙,稍后再试!");
 			}
-
 		} else if (action.equals("/modify")) {
 			response.setContentType("text/html; charset=utf-8");
 			PrintWriter out = response.getWriter();

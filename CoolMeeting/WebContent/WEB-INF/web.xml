@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>CoolMeeting</display-name>
+  <servlet>
+    <servlet-name>EmployeeServlet</servlet-name>
+    <servlet-class>servlet.EmployeeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeServlet</servlet-name>
+    <url-pattern>*.employee</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DepartmentServlet</servlet-name>
+    <servlet-class>servlet.DepartmentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DepartmentServlet</servlet-name>
+    <url-pattern>*.department</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RoomServlet</servlet-name>
+    <servlet-class>servlet.RoomServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RoomServlet</servlet-name>
+    <url-pattern>*.room</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MeetingServlet</servlet-name>
+    <servlet-class>servlet.MeetingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MeetingServlet</servlet-name>
+    <url-pattern>*.meeting</url-pattern>
+  </servlet-mapping>
+</web-app>
